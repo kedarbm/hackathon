@@ -14,9 +14,14 @@ public class SqlservicesApplication {
 		SpringApplication.run(SqlservicesApplication.class, args);
 	}
 
-	@RequestMapping(value = "/")
-	public String hello() {
-		return "Testing Cloud SQL connection";
+	@RequestMapping(value = "/read")
+	public String readService() {
+		return "Testing Cloud SQL connection for read service";
+	}
+
+	@RequestMapping(value = "/write")
+	public String writeService() {
+		return "Testing Cloud SQL connection for read service";
 	}
 
 }
